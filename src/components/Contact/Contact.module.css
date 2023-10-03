@@ -1,0 +1,65 @@
+/* Contact.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  text-align: center;
+  margin-right: 20px; /* Ajusta el espacio entre el formulario y la imagen */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  height: 320px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.textareaField {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+.submitButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #2980b9;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  margin-top: 50px;
+  margin-left: 100px;
+  max-width: 100%;
+  width: 600px;
+  max-height: 100%;
+}

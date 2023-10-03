@@ -1,0 +1,67 @@
+/* About.module.css */
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.imgContainer {
+  flex: 1 1 100%; /* La imagen ocupa toda la anchura en una línea separada */
+  margin-bottom: 20px; /* Espacio entre la imagen y las cards */
+}
+
+.textContainer {
+  flex: 1; /* El texto ocupa el espacio restante */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Espacio entre las cards */
+}
+
+.card {
+  flex: 1 1 calc(50% - 10px); /* Cálculo del ancho con margen entre las cards */
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+  transition: background-color 0.3s ease; /* Transición de color al hacer hover */
+  max-width: calc(50% - 10px); /* Máximo ancho de la card */
+}
+
+.card:hover {
+  background-color: rgba(97, 218, 251, 0.8);
+  color: black;
+  font-weight: bold;
+}
+
+.card h3 {
+  color: #333;
+}
+
+.card p {
+  color: #555;
+}
+
+.imgAbout {
+  width: 350px; /* Ajusta el ancho de la imagen */
+  max-height: 400px; /* Máxima altura de la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cardWrapper {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .textContainer {
+    flex: 100%; /* Cambia a ocupar el 100% en pantallas pequeñas */
+  }
+
+  .card {
+    flex: 1 1 100%; /* Las cards ocupan toda la anchura en pantallas pequeñas */
+    max-width: calc(
+      100% - 20px
+    ); /* Máximo ancho de la card en pantallas pequeñas */
+  }
+}

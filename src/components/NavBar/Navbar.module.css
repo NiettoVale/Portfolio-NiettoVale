@@ -1,0 +1,32 @@
+nav {
+  background-color: #333;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aplica display flex al ul para que funcione con justify-content */
+  justify-content: space-evenly; /* Distribuye los elementos de manera pareja */
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+a:hover {
+  color: #61dafb;
+}
