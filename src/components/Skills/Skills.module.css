@@ -1,131 +1,101 @@
-/* .skillsContainer {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.skillList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skillRow {
-  display: flex;
-  justify-content: center;
-}
-
-.skill {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  width: 250px;
-  height: 150px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-style: italic;
-}
-
-.skill:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  border: rgb(250, 0, 0) 2px solid;
-}
-
-.skill span {
-  margin-top: 10px;
-}
-
-.skill img {
-  max-width: 100%;
-  max-height: 100%;
-} */
-/* Skills.module.css */
-
-/* Skills.module.css */
-
-/* Skills.module.css */
-
-/* Skills.module.css */
-
 .skillsContainer {
   text-align: center;
   margin-top: 50px;
 }
 
 .skillList {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
   align-items: center;
-}
-
-.skillRow {
-  display: flex;
-  justify-content: center;
 }
 
 .skill {
   background-color: #333;
   color: white;
   padding: 20px;
-  margin: 10px;
   border-radius: 5px;
-  width: 250px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
   text-align: center;
+  font-style: italic;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-style: italic;
-  overflow: hidden; /* Para ocultar el contenido que se desborda durante el desplazamiento */
-  position: relative; /* Se necesita para establecer el contexto de la posición del pseudo-elemento */
 }
 
-.skill:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+.lastThreeSkills {
+  grid-row: span 2; /* Ocupa dos filas en lugar de una */
 }
 
-.skill:hover::before {
-  content: ""; /* Pseudo-elemento para crear el efecto de borde */
+.skill::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  border: 4px solid transparent;
-  animation: borderAnimation 3s infinite linear; /* Duración, iteración y función de animación */
+  border: 8px solid transparent;
+  animation: borderAnimation 5s infinite linear;
 }
+
+.skill span {
+  margin-top: 25px;
+}
+
+.skill img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 1134px) {
+  .skillList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .skillList {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* @keyframes borderAnimation {
+  0% {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #f857b5;
+  }
+  50% {
+    border-color: #5d12d2;
+  }
+  75% {
+    border-color: #ffdcdc;
+  }
+  100% {
+    border-color: #b931fc;
+  }
+} */
 
 @keyframes borderAnimation {
   0% {
     border-color: transparent;
   }
   25% {
-    border-color: #9400ff;
+    border-color: yellowgreen;
   }
   50% {
-    border-color: transparent;
+    border-color: #1aacac;
   }
   75% {
-    border-color: #aed2ff;
+    border-color: #2e97a7;
   }
   100% {
-    border-color: transparent;
+    border-color: #eeeeee;
   }
-}
-
-.skill span {
-  margin-top: 10px; /* Espaciado entre el icono y el texto */
-}
-
-/* Ajustes para el icono en el caso de las últimas tres habilidades */
-.skill img {
-  max-width: 100%;
-  max-height: 100%;
 }

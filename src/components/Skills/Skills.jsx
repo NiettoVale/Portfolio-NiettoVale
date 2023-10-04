@@ -1,4 +1,5 @@
 // Skills.jsx
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJs,
@@ -17,8 +18,8 @@ const Skills = () => {
   const skillsData = [
     { name: "JavaScript", icon: faJs, level: "Principiante" },
     { name: "Node.js", icon: faNode, level: "Principiante" },
+    { name: "NPM", icon: faNpm, level: "Principiante" },
     { name: "HTML", icon: faHtml5, level: "Principiante" },
-    { name: "npm", icon: faNpm, level: "Principiante" },
     { name: "Git", icon: faGitAlt, level: "Principiante" },
     { name: "GitHub", icon: faGithub, level: "Principiante" },
     { name: "Express", icon: express, level: "Principiante" },
@@ -38,24 +39,33 @@ const Skills = () => {
 
   return (
     <div className={styles.skillsContainer} id="skills">
-      <h2>Skills</h2>
+      <h1>SKILLS</h1>
       <div className={styles.skillList}>
         {chunkedSkills.map((row, rowIndex) => (
           <div key={rowIndex} className={styles.skillRow}>
             {row.map((skill, index) => (
-              <div key={index} className={styles.skill}>
+              <div
+                key={index}
+                className={`${styles.skill} ${
+                  isLastThree(skill.name) ? styles.lastThreeSkills : ""
+                }`}
+              >
                 {isLastThree(skill.name) ? (
-                  <img src={skill.icon} alt={skill.name} />
+                  <>
+                    <img src={skill.icon} alt={skill.name} />
+                    <span>{skill.name}</span>
+                    <span>{skill.level}</span>
+                  </>
                 ) : (
-                  <FontAwesomeIcon
-                    icon={skill.icon}
-                    size="4x" // Ajusta el tamaño de los iconos aquí
-                  />
+                  <>
+                    <FontAwesomeIcon
+                      icon={skill.icon}
+                      size="4x" // Ajusta el tamaño de los iconos aquí
+                    />
+                    <span>{skill.name}</span>
+                    <span>{skill.level}</span>
+                  </>
                 )}
-                <br />
-                <br />
-                <span>{skill.name}</span>
-                <span>{skill.level}</span>
               </div>
             ))}
           </div>

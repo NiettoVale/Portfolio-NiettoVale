@@ -12,7 +12,12 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto:hover {
+  background-color: #ffe5e5;
 }
 
 .imagenProyecto {
@@ -52,4 +57,16 @@ h2 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-items: center;
   align-items: center;
+}
+
+@media (max-width: 1134px) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .projects {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }

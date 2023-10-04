@@ -16,11 +16,36 @@
 .introText {
   font-size: 18px;
   line-height: 1.5;
-  background-color: rgba(255, 255, 255, 0.322); /* Fondo transparente */
-
+  background-color: rgb(255, 255, 255);
   padding: 20px; /* Ajusta según sea necesario */
   border-radius: 8px; /* Añade esquinas redondeadas si lo deseas */
   max-width: 600px; /* Ajusta según sea necesario */
   margin: 0 auto; /* Centra el bloque */
   margin-bottom: 30px;
+}
+
+@media (max-width: 1134px) {
+  .introText {
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+    padding: 20px; /* Ajusta según sea necesario */
+    border-radius: 8px; /* Añade esquinas redondeadas si lo deseas */
+    width: 400px;
+    margin: 0 auto; /* Centra el bloque */
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .introText {
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+    padding: 20px; /* Ajusta según sea necesario */
+    border-radius: 8px; /* Añade esquinas redondeadas si lo deseas */
+    width: 300px;
+    margin: 0 auto; /* Centra el bloque */
+    margin-bottom: 30px;
+  }
 }

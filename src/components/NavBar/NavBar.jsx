@@ -1,10 +1,20 @@
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <ul>
+        <div className={styles.menuToggle} onClick={toggleMenu}>
+          ☰
+        </div>
+        <ul className={menuOpen ? styles.menuListOpen : styles.menuList}>
           <li>
             <a href="#inicio">Inicio</a>
           </li>
