@@ -38,50 +38,52 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={styles.container} id="contact">
-      <div className={styles.formContainer}>
-        <h1>Contáctame:</h1>
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.label}>
-            <label>Nombre:</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className={styles.inputField}
-            />
-          </div>
-          <div className={styles.label}>
-            <label>Email:</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className={styles.inputField}
-            />
-          </div>
-          <div className={styles.label}>
-            <label>Mensaje:</label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              className={styles.textareaField}
-            />
-          </div>
-          <button type="submit" className={styles.submitButton}>
-            Enviar
-          </button>
-        </form>
-      </div>
-      <div className={styles.imageContainer}>
-        <img
-          src="https://acortar.link/BrUa2W"
-          alt=""
-          className={styles.image}
-        />
+    <div id="contact">
+      <h1>CONTÁCTAME:</h1>
+      <div className={styles.container}>
+        <div className={styles.formContainer}>
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <div className={styles.label}>
+              <label>Nombre:</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className={styles.inputField}
+              />
+            </div>
+            <div className={styles.label}>
+              <label>Email:</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className={styles.inputField}
+              />
+            </div>
+            <div className={styles.label}>
+              <label>Mensaje:</label>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className={styles.textareaField}
+              />
+            </div>
+            <button type="submit" className={styles.submitButton}>
+              Enviar
+            </button>
+          </form>
+        </div>
+        <div className={styles.imageContainer}>
+          <img
+            src="https://acortar.link/BrUa2W"
+            alt=""
+            className={styles.image}
+          />
+        </div>
       </div>
     </div>
   );

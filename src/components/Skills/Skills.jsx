@@ -38,38 +38,40 @@ const Skills = () => {
   }
 
   return (
-    <div className={styles.skillsContainer} id="skills">
-      <h1>SKILLS</h1>
-      <div className={styles.skillList}>
-        {chunkedSkills.map((row, rowIndex) => (
-          <div key={rowIndex} className={styles.skillRow}>
-            {row.map((skill, index) => (
-              <div
-                key={index}
-                className={`${styles.skill} ${
-                  isLastThree(skill.name) ? styles.lastThreeSkills : ""
-                }`}
-              >
-                {isLastThree(skill.name) ? (
-                  <>
-                    <img src={skill.icon} alt={skill.name} />
-                    <span>{skill.name}</span>
-                    <span>{skill.level}</span>
-                  </>
-                ) : (
-                  <>
-                    <FontAwesomeIcon
-                      icon={skill.icon}
-                      size="4x" // Ajusta el tamaño de los iconos aquí
-                    />
-                    <span>{skill.name}</span>
-                    <span>{skill.level}</span>
-                  </>
-                )}
-              </div>
-            ))}
-          </div>
-        ))}
+    <div id="skills">
+      <div className={styles.skillsContainer} style={{ paddingTop: "55px" }}>
+        <h1>SKILLS</h1>
+        <div className={styles.skillList}>
+          {chunkedSkills.map((row, rowIndex) => (
+            <div key={rowIndex} className={styles.skillRow}>
+              {row.map((skill, index) => (
+                <div
+                  key={index}
+                  className={`${styles.skill} ${
+                    isLastThree(skill.name) ? styles.lastThreeSkills : ""
+                  }`}
+                >
+                  {isLastThree(skill.name) ? (
+                    <>
+                      <img src={skill.icon} alt={skill.name} />
+                      <span>{skill.name}</span>
+                      <span>{skill.level}</span>
+                    </>
+                  ) : (
+                    <>
+                      <FontAwesomeIcon
+                        icon={skill.icon}
+                        size="4x" // Ajusta el tamaño de los iconos aquí
+                      />
+                      <span>{skill.name}</span>
+                      <span>{skill.level}</span>
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

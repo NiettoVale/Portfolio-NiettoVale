@@ -17,6 +17,7 @@
     "axios": "^1.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scroll": "^1.8.9",
     "sweetalert2": "^11.7.31"
   },
   "devDependencies": {

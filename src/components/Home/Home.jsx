@@ -6,17 +6,19 @@ import styles from "./Home.module.css"; // Asegúrate de tener el archivo CSS co
 
 const Home = () => {
   return (
-    <div className={styles.homeContainer} id="inicio">
-      <div className={styles.introText}>
-        <p>Hola, me llamo</p>
-        <h1 className={styles.name}>VALENTIN FRANCISCO</h1>
-        <p>y soy desarrollador backend</p>
-      </div>
+    <div id="inicio" style={{ paddingTop: "21px" }}>
+      <div className={styles.homeContainer}>
+        <div className={styles.introText}>
+          <p>Hola, me llamo</p>
+          <h1 className={styles.name}>VALENTIN FRANCISCO</h1>
+          <p>y soy desarrollador backend</p>
+        </div>
 
-      <About />
-      <Projects />
-      <Skills />
-      <ContactForm />
+        <About />
+        <Projects />
+        <Skills />
+        <ContactForm />
+      </div>
     </div>
   );
 };
