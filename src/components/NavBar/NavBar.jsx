@@ -30,7 +30,9 @@ const Navbar = () => {
           <div className={styles.menuToggle} onClick={toggleMenu}>
             ☰
           </div>
-          <div className={styles.menuText}>Menu</div>
+          <div className={styles.menuText} onClick={toggleMenu}>
+            Menu
+          </div>
         </div>
         <ul className={`${styles.menuList} ${menuOpen ? styles.active : ""}`}>
           <Link to="#" onClick={toggleMenu} className={styles.translateTitle}>

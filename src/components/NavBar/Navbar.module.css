@@ -85,6 +85,10 @@ a:hover {
   display: none;
 }
 
+.menuText:hover {
+  color: pink;
+}
+
 .menuList li:hover,
 .menuList a:hover {
   cursor: pointer;
