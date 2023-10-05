@@ -86,10 +86,9 @@ const Navbar = () => {
           <li>
             <a
               href="https://drive.google.com/uc?export=download&id=1WF89S9jpNvW0UtHjseIIDY-UXRICfpFQ"
-              target="_blank"
               rel="noopener noreferrer"
             >
-              Descargar CV
+              {t("navbar.cv")}
             </a>
           </li>
         </ul>
