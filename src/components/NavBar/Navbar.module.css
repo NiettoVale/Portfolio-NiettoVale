@@ -81,6 +81,10 @@ a:hover {
   text-align: center;
 }
 
+.menuText {
+  display: none;
+}
+
 .menuList li:hover,
 .menuList a:hover {
   cursor: pointer;
@@ -132,5 +136,18 @@ a:hover {
     width: 100%;
     height: auto;
     z-index: 1;
+  }
+
+  .menuToggleContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .menuText {
+    margin-left: 8px; /* Ajusta el margen según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
+    color: white;
+    cursor: pointer;
+    display: block;
   }
 }

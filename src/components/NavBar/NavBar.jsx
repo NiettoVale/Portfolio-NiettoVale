@@ -26,8 +26,11 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <div className={styles.menuToggle} onClick={toggleMenu}>
-          ☰
+        <div className={styles.menuToggleContainer}>
+          <div className={styles.menuToggle} onClick={toggleMenu}>
+            ☰
+          </div>
+          <div className={styles.menuText}>Menu</div>
         </div>
         <ul className={`${styles.menuList} ${menuOpen ? styles.active : ""}`}>
           <Link to="#" onClick={toggleMenu} className={styles.translateTitle}>
