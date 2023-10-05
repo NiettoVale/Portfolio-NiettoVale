@@ -10,8 +10,14 @@ const About = () => {
         <h1 className={styles.h1}>{t("about.about_me")}</h1>
 
         <div className={styles.imgContainer}>
-          <img
+          {/* <img
             src="https://acortar.link/JNcCTv"
+            alt="imageProfile"
+            className={styles.imgAbout}
+          /> */}
+
+          <img
+            src="https://acortar.link/r7L50R"
             alt="imageProfile"
             className={styles.imgAbout}
           />
