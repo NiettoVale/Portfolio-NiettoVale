@@ -16,10 +16,10 @@ const Navbar = () => {
   };
 
   const languageOptions = [
-    { code: "en", label: "Inglés" },
-    { code: "es", label: "Español" },
-    { code: "pt", label: "Portugués" },
-    { code: "ru", label: "Ruso" },
+    { code: "en", label: "INGLÉS" },
+    { code: "es", label: "ESPAÑOL" },
+    { code: "pt", label: "PORTUGUÉS" },
+    { code: "ru", label: "RUSO" },
     // Agrega más idiomas según sea necesario
   ];
 
@@ -30,7 +30,7 @@ const Navbar = () => {
           ☰
         </div>
         <ul className={`${styles.menuList} ${menuOpen ? styles.active : ""}`}>
-          <Link to="#" onClick={toggleMenu}>
+          <Link to="#" onClick={toggleMenu} className={styles.translateTitle}>
             {t("common.translate")}
           </Link>
           {menuOpen && (

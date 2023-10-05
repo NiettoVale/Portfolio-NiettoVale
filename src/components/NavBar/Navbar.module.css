@@ -81,6 +81,11 @@ a:hover {
   text-align: center;
 }
 
+.menuList li:hover,
+.menuList a:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .menuToggle {
     display: inline;
@@ -107,5 +112,25 @@ a:hover {
 
   .languageToggle {
     margin-left: auto;
+  }
+
+  .translateTitle {
+    display: none;
+  }
+
+  .languageOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    z-index: 1;
   }
 }
