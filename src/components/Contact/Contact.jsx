@@ -3,8 +3,10 @@ import { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import styles from "./Contact.module.css";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const [t] = useTranslation("global");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,8 +25,8 @@ const ContactForm = () => {
       // Utilizar SweetAlert2 para mostrar un mensaje de éxito
       Swal.fire({
         icon: "success",
-        title: "Éxito!",
-        text: "Mensaje enviado con éxito!!",
+        title: t("alerts.alert_ok_title"),
+        text: t("alerts.alert_ok_text"),
       });
     } catch (error) {
       console.error("Error sending message:", error);
@@ -32,19 +34,19 @@ const ContactForm = () => {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Error al enviar el correo, intente de nuevo.",
+        text: t("alerts.alert_error_text"),
       });
     }
   };
 
   return (
     <div id="contact">
-      <h1>CONTÁCTAME:</h1>
+      <h1>{t("contact.title")}:</h1>
       <div className={styles.container}>
         <div className={styles.formContainer}>
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.label}>
-              <label>Nombre:</label>
+              <label>{t("contact.name")}:</label>
               <input
                 type="text"
                 name="name"
@@ -64,7 +66,7 @@ const ContactForm = () => {
               />
             </div>
             <div className={styles.label}>
-              <label>Mensaje:</label>
+              <label>{t("contact.message")}:</label>
               <textarea
                 name="message"
                 value={formData.message}

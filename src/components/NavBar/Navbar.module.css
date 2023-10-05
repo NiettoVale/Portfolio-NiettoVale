@@ -18,8 +18,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Aplica display flex al ul para que funcione con justify-content */
-  justify-content: space-evenly; /* Distribuye los elementos de manera pareja */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 li {
@@ -38,7 +39,7 @@ a:hover {
 }
 
 .menuToggle {
-  display: none; /* Se oculta en tamaños grandes */
+  display: none;
   cursor: pointer;
   color: pink;
 }
@@ -49,21 +50,35 @@ a:hover {
   padding: 0;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-.menuListOpen {
+.languageToggle {
+  display: flex;
+  align-items: center;
+  position: relative; /* Agregado para establecer un contexto de posicionamiento relativo */
+}
+
+.languageOptions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 70px;
+  top: 100%; /* Ajustado para estar debajo del elemento padre */
   left: 0;
-  right: 0;
   background-color: #333;
-  text-align: center;
+  width: 250px;
+  height: auto;
+  border-radius: 4px;
+  z-index: 1;
 }
 
-.menuListOpen li {
-  margin: 10px 0;
+.languageOptions li {
+  padding: 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,13 +88,24 @@ a:hover {
   }
 
   .menuList {
-    display: none; /* Se oculta en tamaños pequeños */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
   }
 
-  a:hover {
-    display: block;
-    background-color: aqua;
-    color: black;
-    padding: 2.5px;
+  .menuList.active {
+    display: flex;
+  }
+
+  .menuList li {
+    margin: 10px 0;
+  }
+
+  .languageToggle {
+    margin-left: auto;
   }
 }

@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "home": "CASA",
+    "about": "SOBRE",
+    "projects": "PROJETOS",
+    "skills": "HABILIDADES",
+    "contact": "CONTATO"
+  },
+
+  "home": {
+    "my_name": "Olá 👋 meu nome é",
+    "name": "VALENTIM FRANCISCO",
+    "developer": "e eu sou um desenvolvedor backend"
+  },
+
+  "about": {
+    "about_me": "SOBRE MIM",
+    "h1_who_I_am": "Quem eu sou?",
+    "who_I_am": "Sou um desenvolvedor back-end apaixonado, de 20 anos, originário de\nCórdoba Argentina. Me formei no bootcamp Soy Henry, onde\nadquiri habilidades em desenvolvimento de software. Minha paixão consiste em\nexplorar os meandros do desenvolvimento do lado do servidor e\no maravilhoso mundo da segurança cibernética. Estou sempre em busca de\nnovos desafios e oportunidades para crescer no excitante\nmundo da tecnologia. Vamos criar soluções juntos!",
+    "h1_my_studies": "Meus estudos",
+    "my_studies": "Minha trajetória no mundo da tecnologia começou com dois anos de\nestudo na carreira de Engenharia de Sistemas de Informação.\nNo entanto, à medida que progredi, descobri que minha verdadeira\npaixão estava na própria programação. Foi então que\ndecidi explorar novas oportunidades. Foi nesse momento que\ndescobri o Soy Henry, um bootcamp full stack de desenvolvimento web.\nDecidi mergulhar totalmente nesta emocionante jornada\nem direção ao mundo do desenvolvimento web. Antes de embarcar nesta aventura,\nadquiri conhecimentos na área de cibersegurança. Realizei\ncursos como Introdução à Segurança Cibernética e Fundamentos de Segurança Cibernética\nCibersegurança, onde meu fascínio por este mundo cresceu\nsignificativamente. Esses cursos não apenas me forneceram\nbase sólida em segurança cibernética, mas também despertaram meu\ninteresse em explorar e contribuir para um ambiente digital mais seguro.",
+    "h1_What_do_I_aspire_to": "O que eu aspiro",
+    "What_do_I_aspire_to": "Minha aspiração é transcender os limites do desenvolvimento back-end e\nentrar no fascinante mundo da segurança cibernética. Meu\nMeu objetivo é me tornar um especialista líder em diversas áreas.\nEssa área está em constante evolução. Em particular, quero aprender áreas importantes como criptografia, análise forense digital e segurança de rede. Procuro não apenas enfrentar\nos desafios atuais de segurança cibernética, mas também antecipar e\nprevenir ameaças futuras. Minha visão é contribuir\nfortalecer a segurança cibernética em um ambiente cada vez mais digitalizado e colaborar na construção de um ambiente online seguro e confiável para indivíduos e organizações."
+  },
+
+  "projects": {
+    "title": "PROJETOS EM DESTAQUE",
+    "gameverse": "Este projeto foi desenvolvido durante meu período no bootcamp Soy Henry. GameVerse é um aplicativo de página única (SPA) que permite explorar uma variedade de videogames, criar seus próprios títulos e realizar ações como edição e exclusão. Além disso, fornece detalhes completos sobre cada jogo em particular, proporcionando uma experiência de jogo completa.",
+    "rick_morty": "Durante minha participação no bootcamp Soy Henry, desenvolvi esta aplicação web. Rick e Morty é uma plataforma que utiliza a API oficial da série para oferecer informações detalhadas sobre os personagens que nela aparecem. Os usuários podem pesquisar personagens, explorar seus detalhes, aplicar filtros de pesquisa e salvar seus personagens favoritos para uma experiência personalizada.",
+    "espacio_flipante": "Espacio Flipante é uma loja de roupas que nasceu da paixão e do esforço de uma equipe unida durante a fase final dos laboratórios da Soy Henry. Aqui você encontra uma seleção única de peças que refletem seu estilo pessoal, em um ambiente vibrante e criativo criado com dedicação e amor. Bem-vindo a um espaço onde moda e colaboração se unem para lhe oferecer uma experiência verdadeiramente incrível.",
+    "cipher_strength": "A API CipherStrength é uma ferramenta projetada para desenvolvedores avaliarem a força da senha. Implementada em JavaScript e Express, esta API utiliza a biblioteca zxcvbn para realizar análises de segurança nas senhas fornecidas."
+  },
+
+  "skills": {
+    "title": "Habilidades",
+    "level": "Principiante"
+  },
+
+  "contact": {
+    "title": "CONTATE-ME",
+    "name": "Nome",
+    "message": "Mensagem"
+  },
+
+  "alerts": {
+    "alert_ok_title": "Sucesso!",
+    "alert_ok_text": "Mensagem enviada com sucesso!!",
+    "alert_error_text": "Erro, você deve preencher todos os campos."
+  },
+
+  "common": {
+    "translate": "Traduzir"
+  }
+}

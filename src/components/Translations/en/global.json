@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "projects": "PROJECTS",
+    "skills": "SKILLS",
+    "contact": "CONTACT"
+  },
+
+  "home": {
+    "my_name": "Hello 👋 my name is",
+    "name": "VALENTIN FRANCISCO",
+    "developer": "and I am a backend developer"
+  },
+
+  "about": {
+    "about_me": "ABOUT ME",
+    "h1_who_I_am": "Who I am?",
+    "who_I_am": "I am a passionate 20-year-old Back-end developer, originally from\nCordoba Argentina. I graduated from the Soy Henry bootcamp, where\nI acquired skills in software development. My passion lies in\nexploring the ins and outs of server-side development and\nthe wonderful world of cybersecurity. I'm always looking for\nnew challenges and opportunities to grow in the exciting\nworld of technology. Let's create solutions together!",
+    "h1_my_studies": "My studies",
+    "my_studies": "My path in the world of technology began with two years of\nI study in the Information Systems Engineering career.\nHowever, as I progressed, I discovered that my true\npassion lay in the programming itself. It was then that\nI decided to explore new opportunities. It was at that moment that\nI discovered Soy Henry, a full stack web development bootcamp.\nI decided to fully immerse myself in this exciting journey towards\nthe world of web development. Before embarking on this adventure,\nI acquired knowledge in the field of cybersecurity. I realized\ncourses such as Introduction to Cybersecurity and Fundamentals of Cybersecurity\nCybersecurity, where my fascination with this world grew from\nsignificantly. These courses not only provided me with\nsolid foundation in cybersecurity, but also awakened my\ninterest in exploring and contributing to a safer digital environment.",
+    "h1_What_do_I_aspire_to": "What do I aspire to",
+    "What_do_I_aspire_to": "My aspiration is to transcend the limits of Back-end development and\nenter the fascinating world of cybersecurity. My\nMy goal is to become a leading expert in various fields.\nof this constantly evolving field. In particular, I long\nto learn key areas such as cryptography, research\nDigital forensics and network security. I seek not only to confront\ncurrent challenges in cybersecurity, but also anticipate and\nprevent future threats. My vision is to contribute to\nstrengthening cybersecurity in an increasingly\ndigitized and collaborate in building an online environment\nSafe and reliable for individuals and organizations alike."
+  },
+
+  "projects": {
+    "title": "FEATURED PROJECTS",
+    "gameverse": "This project was developed during my time at the Soy Henry bootcamp. GameVerse is a single page application (SPA) that allows you to explore a variety of video games, create your own titles, and perform actions such as editing and deleting. Furthermore, it provides exhaustive details about each particular game, providing a complete gaming experience.",
+    "rick_morty": "During my participation in the Soy Henry bootcamp, I developed this web application. Rick and Morty is a platform that uses the official API of the series to offer detailed information about the characters that appear in it. Users have the ability to search for characters, explore their details, apply search filters, and save their favorite characters for a personalized experience.",
+    "espacio_flipante": "Espacio Flipante is a clothing store that was born from the passion and effort of a united team during the final stage of the laboratories at Soy Henry. Here you will find a unique selection of garments that reflect your personal style, in a vibrant and creative environment created with dedication and love. Welcome to a space where fashion and collaboration come together to offer you a truly amazing experience.",
+    "cipher_strength": "CipherStrength API is a tool designed for developers to evaluate password strength. Implemented using JavaScript and Express, this API uses the zxcvbn library to perform security analysis on the provided passwords."
+  },
+
+  "skills": {
+    "title": "Skills",
+    "level": "Beginner"
+  },
+
+  "contact": {
+    "title": "CONTACT ME",
+    "name": "Name",
+    "message": "Message"
+  },
+
+  "alerts": {
+    "alert_ok_title": "Success!",
+    "alert_ok_text": "Message sent succesfully!!",
+    "alert_error_text": "Error, you must complete all fields."
+  },
+
+  "common": {
+    "translate": "Translate"
+  }
+}

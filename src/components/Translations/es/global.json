@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+
+  "home": {
+    "my_name": "Hola 👋 me llamo",
+    "name": "VALENTIN FRANCISCO",
+    "developer": "y soy desarrollador backend"
+  },
+
+  "about": {
+    "about_me": "SOBRE MI",
+    "h1_who_I_am": "¿Quién soy?",
+    "who_I_am": "Soy un apasionado desarrollador Back-end de 20 años, originario de\nCórdoba Argentina. Me gradué del bootcamp Soy Henry, donde\nadquirí habilidades en desarrollo de software. Mi pasión radica enexplorar los entresijos del desarrollo del lado del servidor y\nel maravilloso mundo de la ciberseguridad. Siempre estoy buscando\nnuevos desafíos y oportunidades para crecer en el apasionante\nmundo de la tecnología. ¡Creemos soluciones juntos!",
+    "h1_my_studies": "Mis estudios",
+    "my_studies": "Mi camino en el mundo de la tecnología comenzó con dos años de\nestudio en la carrera de Ingeniería en Sistemas de Información.\nSin embargo, a medida que fui avanzando, descubrí que mi verdadera\npasión radicaba en la programación misma. Fue entonces cuando\ndecidí explorar nuevas oportunidades. Fue en ese momento que\ndescubrí Soy Henry, un bootcamp de desarrollo web full stack.\nDecidí sumergirme de lleno en este apasionante viaje hacia\nel mundo del desarrollo web. Antes de emprender esta aventura,\nadquirí conocimientos en el campo de la ciberseguridad. Realicé\ncursos como Introducción a la Ciberseguridad y Fundamentos de Ciberseguridad\nCiberseguridad, donde mi fascinación por este mundo creció\nsignificativamente. Estos cursos no solo me brindaron\nuna base sólida en ciberseguridad, sino que también despertaron mi\ninterés en explorar y contribuir a un entorno digital más seguro.",
+    "h1_What_do_I_aspire_to": "¿A qué aspiro?",
+    "What_do_I_aspire_to": "Mi aspiración es trascender los límites del desarrollo Back-end y\nentrar en el fascinante mundo de la ciberseguridad. Mi\nMi objetivo es convertirme en un experto líder en diversos campos.\nde este campo en constante evolución. En particular, anhelo aprender áreas clave como criptografía, investigación forense digital y seguridad de redes. Busco no sólo enfrentar\nlos desafíos actuales en ciberseguridad, sino también anticiparme y\nprevenir amenazas futuras. Mi visión es contribuir a\nfortalecer la ciberseguridad en un entorno cada vez\ndigitalizado y colaborar en la construcción de un entorno online\nseguro y confiable tanto para individuos como para organizaciones."
+  },
+
+  "projects": {
+    "title": "PROYECTOS DESTACADOS",
+    "gameverse": "Este proyecto fue desarrollado durante mi etapa en el bootcamp de Soy Henry. GameVerse es una aplicación de una sola página (SPA) que te permite explorar una variedad de videojuegos, crear tus propios títulos y realizar acciones como edición y eliminación. Además, proporciona detalles exhaustivos sobre cada juego en particular, brindando una experiencia completa de juego.",
+    "rick_morty": "Durante mi participación en el bootcamp de Soy Henry, desarrollé esta aplicación web. Rick y Morty es una plataforma que hace uso de la API oficial de la serie para ofrecer información detallada sobre los personajes que aparecen en la misma. Los usuarios tienen la capacidad de buscar personajes, explorar sus detalles, aplicar filtros de búsqueda y guardar sus personajes favoritos para una experiencia personalizada.",
+    "espacio_flipante": "Espacio Flipante es una tienda de indumentaria que nació de la pasión y el esfuerzo de un equipo unido durante la etapa final de los laboratorios en Soy Henry. Aquí encontrarás una selección única de prendas que reflejan tu estilo personal, en un ambiente vibrante y creativo creado con dedicación y amor. Bienvenido a un espacio donde la moda y la colaboración se unen para ofrecerte una experiencia verdaderamente flipante.",
+    "cipher_strength": "CipherStrength API es una herramienta diseñada para que los desarrolladores evalúen la fortaleza de las contraseñas. Esta implementada utilizando JavaScript y Express, esta API utiliza la biblioteca zxcvbn para realizar análisis de seguridad en las contraseñas proporcionadas."
+  },
+
+  "skills": {
+    "title": "HABILIDADES",
+    "level": "Principiante"
+  },
+
+  "contact": {
+    "title": "CONTÁCTAME",
+    "name": "Nombre",
+    "message": "Mensaje"
+  },
+
+  "alerts": {
+    "alert_ok_title": "Éxito!",
+    "alert_ok_text": "Mensaje enviado con éxito!!",
+    "alert_error_text": "Error, debe completar todos los campos."
+  },
+
+  "common": {
+    "translate": "Traducir"
+  }
+}

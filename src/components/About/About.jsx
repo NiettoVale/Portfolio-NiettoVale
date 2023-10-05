@@ -1,10 +1,13 @@
 import styles from "./About.module.css";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const [t] = useTranslation("global");
   return (
     <div id="about">
       <div className={styles.aboutContainer} style={{ paddingTop: "45px" }}>
-        <h1 className={styles.h1}>SOBRE MI</h1>
+        {/* <h1 className={styles.h1}>SOBRE MI</h1> */}
+        <h1 className={styles.h1}>{t("about.about_me")}</h1>
 
         <div className={styles.imgContainer}>
           <img
@@ -22,20 +25,12 @@ const About = () => {
 
         <div className={styles.cardWrapper}>
           <div className={styles.card}>
-            <h3>¿Quién Soy?</h3>
-            <p>
-              Soy un apasionado desarrollador Back-end de 20 años, originario de
-              Córdoba, Argentina. Me gradué del bootcamp Soy Henry, donde
-              adquirí habilidades en desarrollo de software. Mi pasión radica en
-              explorar los entresijos del desarrollo del lado del servidor y el
-              maravilloso mundo de la ciberseguridad. Siempre estoy buscando
-              nuevos desafíos y oportunidades para crecer en el emocionante
-              mundo de la tecnología. ¡Vamos a crear soluciones juntos!
-            </p>
+            <h3>{t("about.h1_who_I_am")}</h3>
+            <p>{t("about.who_I_am")}</p>
           </div>
 
           <div className={styles.card}>
-            <h3>Mis estudios</h3>
+            {/* <h3>Mis estudios</h3>
             <p>
               Mi camino en el mundo de la tecnología comenzó con dos años de
               estudio en la carrera de Ingeniería en Sistemas de Información.
@@ -51,11 +46,13 @@ const About = () => {
               manera significativa. Estos cursos no solo me proporcionaron una
               base sólida en ciberseguridad, sino que también despertaron mi
               interés por explorar y contribuir a un entorno digital más seguro.
-            </p>
+            </p> */}
+            <h3>{t("about.h1_my_studies")}</h3>
+            <p>{t("about.my_studies")}</p>
           </div>
 
           <div className={styles.card}>
-            <h3>¿A qué aspiro?</h3>
+            {/* <h3>¿A qué aspiro?</h3>
             <p>
               Mi aspiración es trascender los límites del desarrollo Back-end y
               adentrarme en el fascinante mundo de la ciberseguridad. Mi
@@ -68,7 +65,9 @@ const About = () => {
               fortalecimiento de la ciberseguridad en un mundo cada vez más
               digitalizado y colaborar en la construcción de un entorno en línea
               seguro y confiable para individuos y organizaciones por igual.
-            </p>
+            </p> */}
+            <h3>{t("about.h1_What_do_I_aspire_to")}</h3>
+            <p>{t("about.What_do_I_aspire_to")}</p>
           </div>
         </div>
       </div>
