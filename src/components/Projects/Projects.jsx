@@ -89,22 +89,11 @@ const Projects = () => {
           </div>
 
           <div className={styles.proyecto}>
-            <img
+            {/*<img
               src="https://acortar.link/woN4Gp"
               alt="construccion"
               className={styles.imagenProyecto}
-            />
-            <div className={styles.descripcion}>
-              <h2>CipherStrength API</h2>
-              {/* <p>
-                CipherStrength API es una herramienta diseñada para que los
-                desarrolladores evalúen la fortaleza de las contraseñas. Esta
-                implementada utilizando JavaScript y Express, esta API utiliza
-                la biblioteca zxcvbn para realizar análisis de seguridad en las
-                contraseñas proporcionadas.
-              </p> */}
-              <p>{t("projects.cipher_strength")}</p>
-            </div>
+            /> */}
           </div>
         </div>
       </div>
