@@ -11,7 +11,11 @@ const Projects = () => {
 
         <div className={styles.ProjectsContainer}>
           <div className={styles.proyecto}>
-            <a href="https://acortar.link/k6itrR" target="_blank">
+            <a
+              href="https://acortar.link/k6itrR"
+              rel="noreferrer"
+              target="_blank"
+            >
               <img
                 src="https://acortar.link/ecQYOw"
                 alt="GameVerse"
@@ -41,7 +45,11 @@ const Projects = () => {
           </div>
 
           <div className={styles.proyecto}>
-            <a href="https://acortar.link/9NZBCi" target="_blank">
+            <a
+              href="https://acortar.link/9NZBCi"
+              rel="noreferrer"
+              target="_blank"
+            >
               <img
                 src="https://acortar.link/0Q9lmf"
                 alt="Rick y Morty"
@@ -65,7 +73,11 @@ const Projects = () => {
           </div>
 
           <div className={styles.proyecto}>
-            <a href="https://acortar.link/sD8YSV" target="_blank">
+            <a
+              href="https://acortar.link/sD8YSV"
+              rel="noreferrer"
+              target="_blank"
+            >
               <img
                 src="https://acortar.link/vBnXco"
                 alt="Espacio Flipante"
@@ -87,14 +99,6 @@ const Projects = () => {
               <p>{t("projects.espacio_flipante")}</p>
             </div>
           </div>
-
-          <div className={styles.proyecto}>
-            {/*<img
-              src="https://acortar.link/woN4Gp"
-              alt="construccion"
-              className={styles.imagenProyecto}
-            /> */}
-          </div>
         </div>
       </div>
     </div>
@@ -102,3 +106,11 @@ const Projects = () => {
 };
 
 export default Projects;
+
+{
+  /*<img
+              src="https://acortar.link/woN4Gp"
+              alt="construccion"
+              className={styles.imagenProyecto}
+            /> */
+}
